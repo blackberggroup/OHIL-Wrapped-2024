@@ -1,0 +1,33 @@
+name: 🚀 Deploy to Dev Server
+
+on:
+  pull_request:
+    types: 
+      - synchronize
+      - opened
+      - labeled
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    if: contains(github.event.pull_request.labels.*.name, 'ready for review')
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.bgsandbox.com
+        username: willelder@bgsandbox.com
+        password: ${{ secrets.ftp_password }}
+        port: 21
+        local-dir: ./dist/
+        server-dir: ohil-wrapped-dev.bgsandbox.com/
+        exclude: |
+          **/.DS_Store
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/assets/sass/**
