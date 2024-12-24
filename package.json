@@ -1,0 +1,19 @@
+{
+  "name": "ohil-wrapped-2024",
+  "version": "1.0.0",
+  "description": "Repository for the Web Development Teams annual wrap up of activity",
+  "main": "script.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "watch": "sass --watch src/assets/scss:src/assets/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "sass": "^1.83.0"
+  }
+}
