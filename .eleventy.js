@@ -12,9 +12,12 @@ module.exports = function (eleventyConfig) {
   
     // Return the configuration object
     return {
+      templateFormats: ["md", "njk", "html", "liquid"],
+      htmlTemplateEngine: "liquid",      
       dir: {
         input: "src",       // Source files
         output: "dist",    // Output directory
+        includes: "_includes",    // Includes directory
       },
     };
   };

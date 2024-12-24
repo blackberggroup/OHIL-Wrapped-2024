@@ -1,8 +1,6 @@
-import gsap from "gsap";
+import { animateHero } from "./animations/01-hero";
 
-// Fade-in animation for the <h1> tag
+// Add event listeners or initialize animations
 window.addEventListener("load", () => {
-  gsap.from("h1", { opacity: 0, duration: 1, ease: "power2.inOut" });
+  animateHero();
 });
-
-console.log('hello Will!sdafsdf');
