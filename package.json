@@ -8,7 +8,7 @@
     "build": "npm-run-all build:scss build:js build:11ty",
     "dev:11ty": "eleventy --serve",
     "watch:js": "vite build --watch",
-    "watch:scss": "sass --watch src/assets/scss:src/assets/css",
+    "watch:scss": "sass --watch src/assets/scss:src/assets/css --load-path=node_modules --quiet-deps",
     "build:scss": "sass src/assets/scss:src/assets/css",
     "build:js": "vite build",
     "build:11ty": "eleventy",
@@ -24,6 +24,7 @@
     "vite": "^6.0.5"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "gsap": "^3.12.5"
   }
 }
