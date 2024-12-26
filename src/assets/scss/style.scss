@@ -1,1 +1,9 @@
 @use "bootstrap/scss/bootstrap";
+@use 'abstracts/variables';
+@use 'base/utilities';
+@use 'sections/hero';
+@use 'sections/digital-horizons';
+
+body {
+    background: #141414;
+}

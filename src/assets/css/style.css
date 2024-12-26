@@ -11844,5 +11844,37 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Colors */
+.fullscreen {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* Text Colors*/
+.text-blue {
+  color: #0E5FFB;
+}
+
+.text-pink {
+  color: #E3006C;
+}
+
+/* Background Colors */
+.bg-pink {
+  background: #E3006C;
+}
+
+#hero .container, #hero .row {
+  min-height: 100vh;
+}
+
+.digital-horizons {
+  background: linear-gradient(90deg, #0E5FFB 0%, #FF7A22 77.5%, #C91E30 100%);
+}
+
+body {
+  background: #141414;
+}
 
 /*# sourceMappingURL=style.css.map */
