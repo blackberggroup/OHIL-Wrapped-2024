@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap');
+
+$font-bebas: "Bebas Neue", serif;
+$font-inter: "Inter", serif;
+
+@mixin font-style($family, $weight: normal, $optical-sizing: auto) {
+  font-family: $family;
+  font-weight: $weight;
+  font-optical-sizing: $optical-sizing;
+}
+
+.text-bebas {
+  @include font-style($font-bebas, 400);
+}
+
+.text-inter {
+  @include font-style($font-inter);
+}
+
+.text-inter-400 {
+    @include font-style($font-inter, 400);
+}
+
+.text-inter-500 {
+  @include font-style($font-inter, 500);
+}
+
+.text-inter-600 {
+  @include font-style($font-inter, 600);
+}
+
+.text-inter-700 {
+  @include font-style($font-inter, 700);
+}
+
+.text-large-number {
+    font-size: clamp(1rem, 20vw, 20rem);
+    letter-spacing: clamp(-2px, -22vw, -35px);
+    vertical-align: middle;
+    line-height: 1;
+}

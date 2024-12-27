@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11845,6 +11847,49 @@ textarea.form-control-lg {
   }
 }
 /* Colors */
+.text-bebas {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+.text-inter {
+  font-family: "Inter", serif;
+  font-weight: normal;
+  font-optical-sizing: auto;
+}
+
+.text-inter-400 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+.text-inter-500 {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-optical-sizing: auto;
+}
+
+.text-inter-600 {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-optical-sizing: auto;
+}
+
+.text-inter-700 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+}
+
+.text-large-number {
+  font-size: clamp(1rem, 20vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11875,7 +11920,6 @@ html.lenis {
   min-height: 100vh;
 }
 
-/* Text Colors*/
 .text-blue {
   color: #0E5FFB;
 }
@@ -11884,21 +11928,104 @@ html.lenis {
   color: #E3006C;
 }
 
-/* Background Colors */
 .bg-pink {
   background: #E3006C;
 }
 
+.word {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.char {
+  display: inline-block;
+  will-change: transform;
+}
+
+#hero {
+  background-image: url("/assets/images/ohil-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#hero canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+}
 #hero .container, #hero .row {
   min-height: 100vh;
+}
+#hero .ohil-text {
+  font-size: clamp(1rem, 22vw, 20rem);
+  letter-spacing: clamp(-5px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 0.75;
+}
+#hero .hero-list p {
+  letter-spacing: -1px;
+}
+#hero .innovation-text {
+  font-size: clamp(1rem, 22vw, 4rem);
+  letter-spacing: clamp(-5px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 0.75;
 }
 
 .digital-horizons {
   background: linear-gradient(90deg, #0E5FFB 0%, #FF7A22 77.5%, #C91E30 100%);
+  padding-top: 128px;
+  padding-bottom: 96px;
+}
+.digital-horizons h2 {
+  font-size: clamp(1rem, 10vw, 7rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 0.9;
+}
+.digital-horizons .bottom-text {
+  font-size: clamp(1rem, 5vw, 6rem);
+  letter-spacing: clamp(-2px, -22vw, -25px);
+  vertical-align: middle;
+  line-height: 1;
+}
+.digital-horizons .dh-number {
+  font-size: clamp(1rem, 20vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 1;
+}
+
+#lines-of-code .overlay {
+  background: rgba(20, 20, 20, 0.9);
+}
+#lines-of-code img {
+  max-height: 350px;
+}
+@media (max-width: 991px) {
+  #lines-of-code img {
+    max-height: 200px;
+  }
+}
+#lines-of-code .sliding-row.middle {
+  transform: translateX(-25vw);
+}
+
+#looking-ahead p {
+  font-size: clamp(1rem, 5vw, 6rem);
+  letter-spacing: clamp(-2px, -22vw, -25px);
+  vertical-align: middle;
+  line-height: 1;
 }
 
 body {
   background: #141414;
+  font-family: "Inter", serif;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+#lines-of-code .overlay {
+  background: rgba(20, 20, 20, 0.9);
+}
+#lines-of-code img {
+  max-height: 350px;
+}
+@media (max-width: 991px) {
+  #lines-of-code img {
+    max-height: 200px;
+  }
+}
+#lines-of-code .sliding-row.middle {
+  transform: translateX(-25vw);
+}
+
+/*# sourceMappingURL=lines-of-code.css.map */
