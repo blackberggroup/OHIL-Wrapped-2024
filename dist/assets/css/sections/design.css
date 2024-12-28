@@ -1,0 +1,16 @@
+#design {
+  background-image: url("/assets/images/ohil-design-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #eee !important;
+}
+#design .headline {
+  font-size: clamp(1rem, 10vw, 5rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 0.9;
+}
+
+/*# sourceMappingURL=design.css.map */

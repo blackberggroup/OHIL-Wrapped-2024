@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@1,14..32,100..900&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11854,31 +11854,31 @@ textarea.form-control-lg {
 }
 
 .text-inter {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   font-optical-sizing: auto;
 }
 
 .text-inter-400 {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
 }
 
 .text-inter-500 {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-optical-sizing: auto;
 }
 
 .text-inter-600 {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-optical-sizing: auto;
 }
 
 .text-inter-700 {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-optical-sizing: auto;
 }
@@ -11977,6 +11977,31 @@ html.lenis {
   line-height: 0.75;
 }
 
+.transforming-development {
+  background: #000;
+  padding-top: 128px;
+  padding-bottom: 96px;
+  color: #eee;
+}
+.transforming-development h2 {
+  font-size: clamp(1rem, 10vw, 6rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 0.9;
+}
+.transforming-development .bottom-text {
+  font-size: clamp(1rem, 5vw, 6rem);
+  letter-spacing: clamp(-2px, -22vw, -25px);
+  vertical-align: middle;
+  line-height: 1;
+}
+.transforming-development .dh-number {
+  font-size: clamp(1rem, 20vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 1;
+}
+
 .digital-horizons {
   background: linear-gradient(90deg, #0E5FFB 0%, #FF7A22 77.5%, #C91E30 100%);
   padding-top: 128px;
@@ -12014,6 +12039,21 @@ html.lenis {
 }
 #lines-of-code .sliding-row.middle {
   transform: translateX(-25vw);
+}
+
+#design {
+  background-image: url("/assets/images/ohil-design-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #eee !important;
+}
+#design .headline {
+  font-size: clamp(1rem, 10vw, 5rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 0.9;
 }
 
 #looking-ahead p {
