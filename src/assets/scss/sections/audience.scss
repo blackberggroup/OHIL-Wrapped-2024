@@ -1,0 +1,28 @@
+#audience {
+    // background: #000;
+    opacity: 0.9;
+    background: linear-gradient(180deg, #141414 40.83%, #000 100%); 
+    color: #eee !important;
+
+    .section-title {
+        color: #E3006C !important;
+    }
+
+    .border {
+        border: var(--bs-border-width) var(--bs-border-style) #E3006C !important;
+    }
+
+    .headline {
+        font-size: clamp(1rem, 10vw, 20rem);
+        letter-spacing: clamp(-2px, -22vw, -35px);
+        vertical-align: middle;
+        line-height: .9;
+        color: #E3006C !important;
+    }
+
+    p {
+        font-size: clamp(1rem, 5vw, 1.6rem);
+        line-height: 110%; /* 28.6px */
+        letter-spacing: -1px;
+    }
+}

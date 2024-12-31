@@ -1,0 +1,25 @@
+#audience {
+  opacity: 0.9;
+  background: linear-gradient(180deg, #141414 40.83%, #000 100%);
+  color: #eee !important;
+}
+#audience .section-title {
+  color: #E3006C !important;
+}
+#audience .border {
+  border: var(--bs-border-width) var(--bs-border-style) #E3006C !important;
+}
+#audience .headline {
+  font-size: clamp(1rem, 10vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 0.9;
+  color: #E3006C !important;
+}
+#audience p {
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  line-height: 110%; /* 28.6px */
+  letter-spacing: -1px;
+}
+
+/*# sourceMappingURL=audience.css.map */

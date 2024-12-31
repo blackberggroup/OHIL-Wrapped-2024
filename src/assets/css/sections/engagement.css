@@ -1,0 +1,42 @@
+.engagement {
+  background: #050505;
+  padding-top: 72px;
+  padding-bottom: 128px;
+  color: #eee !important;
+}
+.engagement h3 {
+  font-family: Inter, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 64px */
+  letter-spacing: -4px;
+}
+.engagement .border {
+  border: var(--bs-border-width) var(--bs-border-style) #FE800F !important;
+}
+.engagement .offset {
+  padding-top: 15rem;
+}
+.engagement .dl-number {
+  font-size: clamp(1rem, 20vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 1;
+}
+.engagement p {
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  line-height: 110%; /* 28.6px */
+  letter-spacing: -1px;
+}
+.engagement .soi .bottom-0 {
+  bottom: 15rem !important;
+}
+.engagement .soi .end-0 {
+  right: 4rem !important;
+}
+.engagement .hackathon .end-0 {
+  right: 16rem !important;
+}
+
+/*# sourceMappingURL=engagement.css.map */
