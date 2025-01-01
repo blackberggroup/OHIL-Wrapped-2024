@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OHIL WRAPPED 2024</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <meta name="description" content="OHIL Wrapped 2024 is a comprehensive wrap-up of the OHIL Web Development year's accomplishments.">
@@ -22,7 +23,6 @@
 </head>
 <body>
   <main>
-
     <section id="hero" class="container-fluid fullscreen text-white">
     <div class="container h-100">
         <div class="row d-flex flex-column position-relative z-2">
@@ -102,10 +102,10 @@
       </section>    
       <div class="overlay position-absolute top-0 start-0 w-100 h-100 z-2"></div>
 </section>
-    <section id="Accessibility" class="container-fluid fullscreen d-flex align-items-center justify-content-center text-black position-relative overflow-hidden bg-white">
+    <section id="accessibility" class="container-fluid fullscreen d-flex align-items-center justify-content-center text-black position-relative overflow-hidden bg-white">
     <div class="container position-absolute z-3">
         <div class="row">
-            <div class="col-7 d-flex flex-column justify-content-start">
+            <div class="col-7 d-flex flex-column justify-content-center">
                 <span class="small text-uppercase rounded-4 border py-1 px-3 align-self-start mb-5">Looking Ahead</span>
                 <h2 class="section-title text-inter-400">We're setting the standard for accessibility and inclusivity</h2>
                 <p class="text-inter-400">We are proud to announce that every site we manage is <strong>100% fully ADA-compliant</strong>. With a focus on user-centric design and seamless functionality, we ensure that everyone, regardless of ability, can access and engage with our digital presence effortlessly.</p>
@@ -114,6 +114,106 @@
                 <p class="large-number text-black text-bebas headline-style-1 text-large-number py-4">16.86</p>
             </div>
         </div>
+    </div>
+</section>
+    <section id="code" class="container-fluid d-flex align-items-center justify-content-center text-white position-relative py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center text-center">
+                <span class="small text-uppercase rounded-4 border py-1 px-3 align-self-center mb-5">Code</span>
+                <h2 class="section-title text-inter-700">From Lines of Code to Lasting Impact</h2>
+            </div>
+            <div class="col-12 col-md-8 offset-md-2 d-flex flex-column code-ui" id="code-ui">
+                <div class="card code-ui__card">
+                    <div class="code-ui__card-toolbar">
+                        <span class="circle first"></span>
+                        <span class="circle second"></span>
+                        <span class="circle third"></span>
+                    </div>
+                    <div class="card-body code-ui__card-body"><code>// Animate each big-numbers element
+document.querySelectorAll(".big-numbers").forEach((element) {
+    const numberElement = element.querySelector(".big-numbers__number");
+
+    if (!numberElement) return; // Safeguard in case the structure is missing
+    const finalValue = parseInt(numberElement.textContent.replace(/,/g, ""), 10);
+
+    // Counting animation
+    gsap.fromTo(
+    numberElement,
+    { textContent: 0 }, // Start from 0
+    {
+        textContent: finalValue,
+        scrollTrigger: {
+        trigger: element,
+        start: "top center", // Start when the element is in the center of the viewport
+        end: "bottom center", // End when the element leaves the viewport
+        scrub: true, // Enable reverse animation on scroll up
+        },
+        ease: "power1.inOut", // Smooth counting in both directions
+        snap: { textContent: 1 }, // Snap to whole numbers
+        onUpdate: function () {
+        numberElement.textContent = Math.floor(this.targets()[0].textContent).toLocaleString();
+        },
+    }
+    );
+
+    // Bounce and fade animations
+    gsap.fromTo(
+    element,
+    { scale: 0.5, opacity: 0 }, // Start small and invisible
+    {
+        scale: 1,
+        opacity: 1,
+        scrollTrigger: {
+        trigger: element,
+        start: "top center",
+        end: "bottom center", // Element fades out when it leaves the viewport
+        scrub: true, // Enable reverse animation on scroll up
+        },
+        ease: "power1.inOut", // Smooth scaling in both directions
+    }
+    );
+});
+                            <span class="code-ui__cursor"></span>
+                        </code>
+                    </div>
+                </div>
+                <!-- <img src="/assets/images/code-ui.webp" class="code-ui__image" alt="html code being displayed in a text editor" /> -->
+                <div class="code-ui__vertical-line"></div>
+            </div>
+        </div>
+        <div class="row big-numbers__row">
+            <div class="col-3 offset-3">
+                <div class="position-relative big-numbers" id="code-projects">
+                    <span class="big-numbers__number" id="">14</span>
+                    <span class="big-numbers__label">Projects</span>
+                </div>
+            </div>            
+        </div>
+        <div class="row big-numbers__row">
+            <div class="col-3 offset-6 my-5">
+                <div class="position-relative big-numbers" id="code-repositories">
+                    <span class="big-numbers__number" id="">16</span>
+                    <span class="big-numbers__label">Repositories</span>
+                </div>                
+            </div>
+        </div>
+        <div class="row big-numbers__row">
+            <div class="col-6 my-5">
+                <div class="position-relative big-numbers" id="code-commits">
+                    <span class="big-numbers__number" id="">1,238</span>
+                    <span class="big-numbers__label">Commits</span>
+                </div>
+            </div>            
+        </div>   
+        <div class="row big-numbers__row">
+            <div class="col-4 offset-6 my-5">
+                <div class="position-relative big-numbers" id="code-pull-requests">
+                    <span class="big-numbers__number" id="">214</span>
+                    <span class="big-numbers__label">Pull Requests</span>
+                </div>                
+            </div>
+        </div>             
     </div>
 </section>
     <section id="looking-ahead" class="container-fluid fullscreen bg-pink d-flex align-items-center justify-content-center py-5">
@@ -127,6 +227,7 @@
     </div>
 </section>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script type="module" src="/assets/js/main.js"></script>
 </body>
 </html>

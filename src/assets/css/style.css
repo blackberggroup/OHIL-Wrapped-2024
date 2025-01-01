@@ -11943,6 +11943,16 @@ html.lenis {
   will-change: transform;
 }
 
+.big-numbers__number {
+  font-size: clamp(1rem, 20vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  color: #0E5FFB;
+  font-family: "Bebas Neue", serif;
+}
 #hero {
   background-image: url("/assets/images/ohil-hero-bg.jpg");
   background-size: cover;
@@ -11991,12 +12001,6 @@ html.lenis {
 .digital-horizons .bottom-text {
   font-size: clamp(1rem, 5vw, 6rem);
   letter-spacing: clamp(-2px, -22vw, -25px);
-  vertical-align: middle;
-  line-height: 1;
-}
-.digital-horizons .dh-number {
-  font-size: clamp(1rem, 20vw, 20rem);
-  letter-spacing: clamp(-2px, -22vw, -35px);
   vertical-align: middle;
   line-height: 1;
 }

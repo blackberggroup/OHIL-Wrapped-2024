@@ -7,9 +7,23 @@ module.exports = function (eleventyConfig) {
   });
 
     // Pass through the assets folder
-    eleventyConfig.addPassthroughCopy("src/assets/css");
-    eleventyConfig.addPassthroughCopy("src/assets/images");
-  
+    // eleventyConfig.addPassthroughCopy("src/assets/css");
+    // eleventyConfig.addPassthroughCopy("dist/assets/css");
+    // eleventyConfig.addPassthroughCopy("src/assets/images");
+    
+    // Watch the SCSS directory for changes
+    eleventyConfig.addWatchTarget("src/assets/scss");
+
+    // Watch the compiled CSS file for changes
+    eleventyConfig.setBrowserSyncConfig({
+      files: ["dist/assets/css/style.css"],
+      callbacks: {
+        ready: (err, bs) => {
+          console.log("Watching for CSS changes...");
+        }
+      }
+    });
+
     // Return the configuration object
     return {
       templateFormats: ["md", "njk", "html", "liquid"],
