@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap");
+/* Colors */
+.text-bebas {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+.text-inter {
+  font-family: "Inter", serif;
+  font-weight: normal;
+  font-optical-sizing: auto;
+}
+
+.text-inter-400 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+.text-inter-500 {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-optical-sizing: auto;
+}
+
+.text-inter-600 {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-optical-sizing: auto;
+}
+
+.text-inter-700 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+}
+
+.text-large-number {
+  font-size: clamp(1rem, 20vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.big-numbers {
+  text-align: right;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.big-numbers__number {
+  font-size: clamp(1rem, 20vw, 20rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  color: #0E5FFB;
+  font-family: "Bebas Neue", serif;
+}
+.big-numbers__label {
+  text-transform: uppercase;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  position: absolute;
+  bottom: 18%;
+  right: 0;
+}
+.big-numbers__row {
+  padding: 120px 0;
+}
+
+/*# sourceMappingURL=big-numbers.css.map */
