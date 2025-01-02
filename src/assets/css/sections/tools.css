@@ -1,0 +1,19 @@
+#tools {
+  background-image: url("/assets/images/tools-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#tools .sliding-row.middle {
+  transform: translateX(-25vw);
+}
+#tools .tools-list {
+  font-size: 3rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=tools.css.map */

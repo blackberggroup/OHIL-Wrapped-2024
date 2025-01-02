@@ -12123,6 +12123,37 @@ code {
   line-height: 1;
 }
 
+#tools {
+  background-image: url("/assets/images/tools-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#tools .sliding-row.middle {
+  transform: translateX(-25vw);
+}
+#tools .tools-list {
+  font-size: 3rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+}
+
+#recap .recap-txt {
+  font-size: 2rem;
+  font-style: normal;
+  color: white;
+  font-weight: 600;
+}
+#recap .recap-hl {
+  color: #E3006C;
+}
+#recap .recap-txt p {
+  display: block;
+}
+
 body {
   background: #141414;
   font-family: "Inter", serif;
