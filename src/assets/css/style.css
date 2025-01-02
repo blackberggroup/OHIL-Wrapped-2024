@@ -12154,6 +12154,23 @@ code {
   display: block;
 }
 
+#accessibility .content-center {
+  align-self: left;
+}
+@media (max-width: 768px) {
+  #accessibility {
+    /* Add your styles here for screens 1000px or smaller */
+  }
+  #accessibility .content {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+  #accessibility .content-center {
+    align-self: center !important;
+  }
+}
+
 body {
   background: #141414;
   font-family: "Inter", serif;
