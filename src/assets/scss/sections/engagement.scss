@@ -5,21 +5,14 @@
     color: #eee !important;
 
     h3 {
-        // color: #EEE;
-        font-family: Inter, sans-serif;
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 600;
+        font-size: clamp(1rem, 3.4vw, 5rem);
+        letter-spacing: clamp(-2px, -22vw, -35px);
         line-height: 100%; /* 64px */
-        letter-spacing: -4px;
+        // letter-spacing: -4px;
     }
 
     .border {
         border: var(--bs-border-width) var(--bs-border-style) #FE800F !important;
-    }
-
-    .offset {
-        padding-top: 15rem;
     }
 
     .dl-number {
@@ -37,16 +30,19 @@
 
     .soi {
         .bottom-0 {
-            bottom: 15rem !important;
+            bottom: 12rem !important;
         }
         .end-0 {
-            right: 4rem !important;
+            right: 1rem !important;
         }
     }
 
     .hackathon {
+        padding-top: 12rem;
+        padding-left: 5rem;
+
         .end-0 {
-            right: 16rem !important;
+            right: 13rem !important;
         }
     }
 }

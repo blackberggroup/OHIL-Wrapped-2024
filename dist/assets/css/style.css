@@ -11987,6 +11987,11 @@ html.lenis {
   padding-bottom: 96px;
   color: #eee;
 }
+.transforming-development p {
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  line-height: 169.231%;
+  letter-spacing: -1px;
+}
 .transforming-development h2 {
   font-size: clamp(1rem, 10vw, 6rem);
   letter-spacing: clamp(-2px, -22vw, -35px);
@@ -12059,6 +12064,9 @@ html.lenis {
   vertical-align: middle;
   line-height: 0.9;
 }
+#design .figma-animation {
+  margin-left: -1.3rem;
+}
 
 #audience {
   opacity: 0.9;
@@ -12108,18 +12116,12 @@ html.lenis {
   color: #eee !important;
 }
 .engagement h3 {
-  font-family: Inter, sans-serif;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 600;
+  font-size: clamp(1rem, 3.4vw, 5rem);
+  letter-spacing: clamp(-2px, -22vw, -35px);
   line-height: 100%; /* 64px */
-  letter-spacing: -4px;
 }
 .engagement .border {
   border: var(--bs-border-width) var(--bs-border-style) #FE800F !important;
-}
-.engagement .offset {
-  padding-top: 15rem;
 }
 .engagement .dl-number {
   font-size: clamp(1rem, 20vw, 20rem);
@@ -12133,13 +12135,17 @@ html.lenis {
   letter-spacing: -1px;
 }
 .engagement .soi .bottom-0 {
-  bottom: 15rem !important;
+  bottom: 12rem !important;
 }
 .engagement .soi .end-0 {
-  right: 4rem !important;
+  right: 1rem !important;
+}
+.engagement .hackathon {
+  padding-top: 12rem;
+  padding-left: 5rem;
 }
 .engagement .hackathon .end-0 {
-  right: 16rem !important;
+  right: 13rem !important;
 }
 
 #looking-ahead p {
