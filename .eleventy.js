@@ -5,11 +5,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('viteScript', function () {
     return `<script type="module" src="/${manifest['src/assets/js/main.js'].file}"></script>`;
   });
-
-    // Pass through the assets folder
-    // eleventyConfig.addPassthroughCopy("src/assets/css");
-    // eleventyConfig.addPassthroughCopy("dist/assets/css");
-    // eleventyConfig.addPassthroughCopy("src/assets/images");
     
     // Watch the SCSS directory for changes
     eleventyConfig.addWatchTarget("src/assets/scss");
@@ -29,9 +24,9 @@ module.exports = function (eleventyConfig) {
       templateFormats: ["md", "njk", "html", "liquid"],
       htmlTemplateEngine: "liquid",      
       dir: {
-        input: "src",       // Source files
-        output: "dist",    // Output directory
-        includes: "_includes",    // Includes directory
+        input: "src",       
+        output: "dist",    
+        includes: "_includes",
       },
     };
   };

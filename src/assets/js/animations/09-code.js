@@ -52,7 +52,7 @@ export function codeAnimations() {
     // Bounce and fade animations
     gsap.fromTo(
       element,
-      { scale: 0.5, opacity: 0 }, // Start small and invisible
+      { scale: 0.5, opacity: 0 }, 
       {
         scale: 1,
         opacity: 1,
@@ -62,11 +62,10 @@ export function codeAnimations() {
           end: "bottom center", // Element fades out when it leaves the viewport
           scrub: true, // Enable reverse animation on scroll up
         },
-        ease: "power1.inOut", // Smooth scaling in both directions
+        ease: "power1.inOut", 
       }
     );
   });
-
 
   const codeElement = document.querySelector(".code-ui__card-body code");
   const cursorElement = document.createElement("span");
@@ -122,8 +121,6 @@ export function codeAnimations() {
       },
     }
   );
-
-
 
   // Refresh ScrollTrigger on resize to recalculate dimensions
   window.addEventListener("resize", () => {

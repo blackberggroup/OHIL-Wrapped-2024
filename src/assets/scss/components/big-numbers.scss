@@ -2,33 +2,31 @@
 @use "../base/typography" as *;
 
 .big-numbers {
-    text-align: right;
-    opacity: 0; /* Hidden initially */
-    transform: scale(0.5); /* Smaller size initially */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* For smoother fallback animations */
-  
+  text-align: right;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
-    &__number {
-        font-size: clamp(1rem, 20vw, 20rem);
-        letter-spacing: clamp(-2px, -22vw, -35px);
-        vertical-align: middle;
-        line-height: 1;     
-        margin: 0;
-        text-transform: uppercase;
-        color: $blue;
-        font-family: $font-bebas;
-    }
+  &__number {
+    font-size: clamp(1rem, 20vw, 20rem);
+    letter-spacing: clamp(-2px, -22vw, -35px);
+    vertical-align: middle;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    color: $blue;
+    font-family: $font-bebas;
+  }
 
-    &__label {
-        text-transform: uppercase;
-        @include font-style($font-inter, 700);
-        position: absolute;
-        bottom: 18%;
-        right: 0;
-    }
+  &__label {
+    text-transform: uppercase;
+    @include font-style($font-inter, 700);
+    position: absolute;
+    bottom: 18%;
+    right: 0;
+  }
 
-    &__row {
-        padding: 120px 0;
-    }
-
+  &__row {
+    padding: 120px 0;
+  }
 }

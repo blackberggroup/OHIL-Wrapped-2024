@@ -11945,9 +11945,9 @@ html.lenis {
 
 .big-numbers {
   text-align: right;
-  opacity: 0; /* Hidden initially */
-  transform: scale(0.5); /* Smaller size initially */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* For smoother fallback animations */
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .big-numbers__number {
   font-size: clamp(1rem, 20vw, 20rem);
@@ -12054,20 +12054,20 @@ html.lenis {
 }
 .code-ui__vertical-line {
   position: absolute;
-  top: calc(100% - 10px); /* Start just below the image */
-  left: 50%; /* Center the line horizontally */
+  top: calc(100% - 10px);
+  left: 50%;
   transform: translateX(-50%);
   width: 4px;
-  height: 0; /* Start at 0 height */
-  background-color: #0E5FFB; /* Line color */
+  height: 0;
+  background-color: #0E5FFB;
   z-index: 0;
 }
 .code-ui__card {
   height: 500px;
-  overflow: hidden; /* Hide any overflowing content during the animation */
-  background: #1e1e1e; /* Optional: A background color resembling a code editor */
-  color: #d4d4d4; /* Optional: Text color resembling code */
-  font-family: monospace; /* Use a monospace font for the code look */
+  overflow: hidden;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: monospace;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -12093,7 +12093,7 @@ html.lenis {
 }
 .code-ui__card-body {
   padding: 20px;
-  white-space: pre-wrap; /* Preserve line breaks and spaces */
+  white-space: pre-wrap;
 }
 .code-ui__cursor {
   display: inline-block;
@@ -12108,7 +12108,7 @@ code {
   color: rgb(157, 157, 157);
   font-size: 12px;
   line-height: 1;
-  overflow: hidden; /* Ensure content doesn't spill outside the container */
+  overflow: hidden;
 }
 
 @keyframes blink {
