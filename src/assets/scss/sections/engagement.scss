@@ -1,0 +1,48 @@
+.engagement {
+    background: #050505;
+    padding-top: 72px;
+    padding-bottom: 128px;
+    color: #eee !important;
+
+    h3 {
+        font-size: clamp(1rem, 3.4vw, 5rem);
+        letter-spacing: clamp(-2px, -22vw, -35px);
+        line-height: 100%; /* 64px */
+        // letter-spacing: -4px;
+    }
+
+    .border {
+        border: var(--bs-border-width) var(--bs-border-style) #FE800F !important;
+    }
+
+    .dl-number {
+        font-size: clamp(1rem, 20vw, 20rem);
+        letter-spacing: clamp(-2px, -22vw, -35px);
+        vertical-align: middle;
+        line-height: 1;
+    }
+
+    p {
+        font-size: clamp(1rem, 5vw, 1.6rem);
+        line-height: 110%; /* 28.6px */
+        letter-spacing: -1px;
+    }
+
+    .soi {
+        .bottom-0 {
+            bottom: 8rem !important;
+        }
+        .end-0 {
+            right: 1rem !important;
+        }
+    }
+
+    .hackathon {
+        padding-top: 12rem;
+        padding-left: 5rem;
+
+        .end-0 {
+            right: 13rem !important;
+        }
+    }
+}
