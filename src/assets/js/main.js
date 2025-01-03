@@ -7,6 +7,7 @@ import { engagementAnimations } from "./animations/06-engagement";
 import { codeAnimations } from "./animations/09-code";
 import { animateHeadlinesStyle1 } from "./animations/headline-style-1";
 import { fadeInParagraphs } from "./animations/paragraph-fade-in";
+import { toolsAnimation } from "./animations/10-tools";
 
 initKeyboardNavigation(lenis);
 
@@ -19,4 +20,5 @@ window.addEventListener("load", () => {
   codeAnimations();
   animateHeadlinesStyle1(".headline-style-1");
   fadeInParagraphs(".p-animate"); 
+  toolsAnimation();
 });
