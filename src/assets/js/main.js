@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
   engagementAnimations();
   codeAnimations();
   animateHeadlinesStyle1(".headline-style-1");
-  fadeInParagraphs(".p-animate"); 
+  fadeInParagraphs(".p-animate", ".section-text-fade-in"); 
   toolsAnimation();
   accessibilityAnimations();
 });
