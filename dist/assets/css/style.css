@@ -12295,19 +12295,6 @@ code {
   white-space: wrap;
 }
 
-#recap .recap-txt {
-  font-size: 2rem;
-  font-style: normal;
-  color: white;
-  font-weight: 600;
-}
-#recap .recap-hl {
-  color: #E3006C;
-}
-#recap .recap-txt p {
-  display: block;
-}
-
 #accessibility .content-center {
   align-self: left;
 }
