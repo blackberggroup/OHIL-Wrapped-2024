@@ -1,7 +1,7 @@
 import { lenis, gsap } from './smooth-scrolling';
 import initKeyboardNavigation from './keyboard-navigation';
 import { initBulgeEffect } from './animations/01-hero';
-import { digitalHorizonsAnimations } from "./animations/02-digital-horizons";
+import { digitalHorizonsAnimations } from "./animations/03-digital-horizons";
 import { linesOfCodeAnimations } from "./animations/04-lines-of-code";
 import { toolsAnimations } from "./animations/10-tools";
 import { codeAnimations } from "./animations/09-code";
