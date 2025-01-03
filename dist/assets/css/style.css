@@ -12311,10 +12311,14 @@ code {
 #accessibility .content-center {
   align-self: left;
 }
+#accessibility h2 {
+  font-size: clamp(1rem, 5vw, 6rem);
+  letter-spacing: clamp(-2px, -22vw, -25px);
+}
+#accessibility .text-large-number {
+  font-size: clamp(1rem, 20vw, 15rem);
+}
 @media (max-width: 768px) {
-  #accessibility {
-    /* Add your styles here for screens 1000px or smaller */
-  }
   #accessibility .content {
     text-align: center;
     width: 100%;

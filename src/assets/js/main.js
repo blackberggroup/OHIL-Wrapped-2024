@@ -8,6 +8,7 @@ import { codeAnimations } from "./animations/09-code";
 import { animateHeadlinesStyle1 } from "./animations/headline-style-1";
 import { fadeInParagraphs } from "./animations/paragraph-fade-in";
 import { toolsAnimation } from "./animations/10-tools";
+import { accessibilityAnimations } from "./animations/07-accessibility";
 
 initKeyboardNavigation(lenis);
 
@@ -21,4 +22,5 @@ window.addEventListener("load", () => {
   animateHeadlinesStyle1(".headline-style-1");
   fadeInParagraphs(".p-animate"); 
   toolsAnimation();
+  accessibilityAnimations();
 });
