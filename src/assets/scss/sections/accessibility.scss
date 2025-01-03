@@ -2,11 +2,19 @@
 #accessibility {
 
     .content-center{
-        align-self: left;
-      }
+      align-self: left;
+    }
+
+    h2 {
+      font-size: clamp(1rem, 5vw, 6rem);
+      letter-spacing: clamp(-2px, -22vw, -25px);
+    }
+
+    .text-large-number {
+      font-size: clamp(1rem, 20vw, 15rem);
+    }
 
     @media (max-width: 768px) {
-        /* Add your styles here for screens 1000px or smaller */
         .content {
           text-align: center; 
           width: 100%;
