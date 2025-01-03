@@ -5,8 +5,12 @@
 @use 'base/animations';
 @use 'components/big-numbers';
 @use 'sections/hero';
+@use 'sections/transforming-development';
 @use 'sections/digital-horizons';
 @use 'sections/lines-of-code';
+@use 'sections/audience';
+@use 'sections/engagement';
+@use 'sections/design';
 @use 'sections/code';
 @use 'sections/looking-ahead';
 @use 'sections/tools';
@@ -15,5 +19,5 @@
 
 body {
     background: #141414;
-    font-family:  "Inter", serif;
+    font-family:  "Inter", sans-serif;
 }
