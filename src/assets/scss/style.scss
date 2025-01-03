@@ -5,6 +5,7 @@
 @use 'base/animations';
 @use 'components/big-numbers';
 @use 'sections/hero';
+@use 'sections/transforming-development';
 @use 'sections/digital-horizons';
 @use 'sections/lines-of-code';
 @use 'sections/code';
@@ -15,5 +16,5 @@
 
 body {
     background: #141414;
-    font-family:  "Inter", serif;
+    font-family:  "Inter", sans-serif;
 }
