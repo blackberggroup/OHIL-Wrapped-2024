@@ -3,31 +3,19 @@
     padding-top: 128px;
     padding-bottom: 96px;
 
-    h2 {
+    .dh-headline {
         font-size: clamp(1rem, 9vw, 7rem);
         letter-spacing: clamp(-4px, -22vw, -35px);
-        vertical-align: middle;
-        line-height: 1.15;
-    }
-
-    h2 {
-        display: inline-block; 
-        background: linear-gradient(90deg, #FFFFAC, #29FFFF); 
+        color: transparent; 
+        background-image: linear-gradient(to right, #FFFFAB, #29FFFF);
         background-clip: text; 
         -webkit-background-clip: text; 
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent; 
-      }
+    }
       
-      h2 span {
-        display: inline-block;
-      }
-      
-      h2 span span {
+    .dh-headline span {
         display: inline-block; 
-      }
-      
-      
+    }
+    
 
     .bottom-text {
         font-size: clamp(1rem, 5vw, 6rem);
