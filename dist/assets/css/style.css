@@ -12009,6 +12009,17 @@ html.lenis {
   vertical-align: middle;
   line-height: 0.75;
 }
+@media (max-width: 991px) {
+  #hero .innovation-text {
+    font-size: clamp(1rem, 22vw, 2rem);
+    letter-spacing: clamp(-2px, -20vw, -15px);
+  }
+}
+@media (max-width: 640px) {
+  #hero .innovation-text {
+    font-size: clamp(1rem, 22vw, 1.5rem);
+  }
+}
 
 .transforming-development {
   background: #000;
@@ -12299,7 +12310,7 @@ code {
   align-self: left;
 }
 #accessibility h2 {
-  font-size: clamp(1rem, 5vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
   letter-spacing: clamp(-2px, -22vw, -25px);
 }
 #accessibility .text-large-number {
