@@ -24,7 +24,7 @@ export function accessibilityAnimations() {
   }
 
   const counters = [
-    { elementId: "accessibility-count", start: 10.01, end: 16.86, duration: 3, delay: 1 },
+    { elementId: "accessibility-count", start: 10.01, end: 16.86, duration: 3, delay: 0 },
   ];
 
   ScrollTrigger.create({

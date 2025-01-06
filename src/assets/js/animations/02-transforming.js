@@ -17,15 +17,13 @@ export function animateWordBordersOnScroll() {
         width: "100%", 
         duration: 1, 
         stagger: 0.75, 
-        ease: "power1.inOut",
-        delay: 2,
+        ease: "none",
         scrollTrigger: {
           trigger: "#transforming-development",
-          start: "top 80%", 
+          start: "top 60%", 
           end: "top 20%",
           scrub: false,
           once: true,
-          delay: 2,
         },
       }
     );
