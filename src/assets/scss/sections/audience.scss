@@ -1,14 +1,14 @@
 #audience {
-    opacity: 0.9;
+    // opacity: 0.9;
     background: linear-gradient(180deg, #141414 40.83%, #000 100%); 
     color: #eee !important;
 
-    background-image: url('/assets/images/ohil-audience-bg.svg');
-    background-position: 50% 360%; 
+    // background-image: url('/assets/images/ohil-audience-bg.svg');
+    // background-position: 50% 360%; 
     background-repeat: no-repeat; 
     overflow: hidden;
     align-items: flex-end;
-    background-size: 90%;
+    // background-size: 90%;
     
     .section-title {
         color: #E3006C !important;
@@ -19,7 +19,7 @@
     }
 
     .headline {
-        font-size: clamp(1rem, 10vw, 20rem);
+        font-size: clamp(1rem, 8vw, 20rem);
         letter-spacing: clamp(-2px, -22vw, -35px);
         vertical-align: middle;
         line-height: .9;
@@ -41,8 +41,14 @@
       pointer-events: none;
     }
   
-      .container, .row {
+      .container {
           min-height: 100vh;
       }
   
+      #audience-count {
+        display: inline-block;
+        text-align: right;
+        font-feature-settings: "tnum";
+        width: 6ch;
+      }
   }

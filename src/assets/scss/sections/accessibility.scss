@@ -25,9 +25,12 @@
           }
       }
   
-  
-  
-  
+      #accessibility-count {
+        display: inline-block;
+        text-align: right;
+        font-feature-settings: "tnum";
+        width: 4ch;
+      }
   
   }
 

@@ -26,7 +26,7 @@ export function digitalHorizonsAnimations() {
 
   const counters = [
     { elementId: "projects-count", start: 12, end: 14, duration: 1, delay: 0 },
-    { elementId: "repositories-count", start: 14, end: 16, duration: 1, delay: 1 },
+    { elementId: "repositories-count", start: 14, end: 16, duration: 1, delay: .5 },
   ];
 
   ScrollTrigger.create({
