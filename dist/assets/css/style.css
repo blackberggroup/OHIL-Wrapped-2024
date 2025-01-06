@@ -12009,6 +12009,11 @@ html.lenis {
   vertical-align: middle;
   line-height: 0.75;
 }
+@media (max-width: 1200px) {
+  #hero .innovation-text {
+    font-size: clamp(1rem, 22vw, 3.5rem);
+  }
+}
 @media (max-width: 991px) {
   #hero .innovation-text {
     font-size: clamp(1rem, 22vw, 2rem);
