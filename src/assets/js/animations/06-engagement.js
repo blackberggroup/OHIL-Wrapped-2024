@@ -25,8 +25,8 @@ export function engagementAnimations() {
   }
 
   const counters = [
-    { elementId: "soi-count", start: 1197, end: 1206, duration: 1, delay: 0 },
-    { elementId: "hackathon-count", start: 490, end: 499, duration: 1, delay: 1 },
+    { elementId: "soi-count", start: 1106, end: 1206, duration: 1, delay: 0 },
+    { elementId: "hackathon-count", start: 459, end: 499, duration: 1, delay: 1 },
   ];
 
   ScrollTrigger.create({
