@@ -4,6 +4,35 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function digitalHorizonsAnimations() {
+  const headline = document.querySelector(".dh-headline");
+
+  if (headline) {
+    gsap.fromTo(
+      headline,
+      {
+        y: 50, 
+        opacity: 0, 
+      },
+      {
+        y: 0, 
+        opacity: 1, 
+        ease: "power2.out",
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: ".dh-headline",
+          start: "top 70%",
+          end: "top 50%",
+          scrub: false,
+        },
+      }
+    );
+  }
+
+  // Example number count-up animation
+  const counters = [
+    { elementId: "projects-count", start: 12, end: 14, duration: 1, delay: 0 },
+    { elementId: "repositories-count", start: 14, end: 16, duration: 1, delay: 0.5 },
+  ];
 
   function animateCountUp(elementId, start, end, duration, delay) {
     const element = document.getElementById(elementId);
@@ -19,19 +48,14 @@ export function digitalHorizonsAnimations() {
         element.textContent = Math.floor(count.value);
       },
       onComplete: () => {
-        element.textContent = end; 
+        element.textContent = end;
       },
     });
   }
 
-  const counters = [
-    { elementId: "projects-count", start: 12, end: 14, duration: 1, delay: 0 },
-    { elementId: "repositories-count", start: 14, end: 16, duration: 1, delay: .5 },
-  ];
-
   ScrollTrigger.create({
     trigger: ".dh-stats",
-    start: "top 80%", 
+    start: "top 80%",
     once: true,
     onEnter: () => {
       counters.forEach(({ elementId, start, end, duration, delay }) =>

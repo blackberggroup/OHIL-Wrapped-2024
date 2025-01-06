@@ -12083,9 +12083,23 @@ html.lenis {
 }
 .digital-horizons h2 {
   font-size: clamp(1rem, 9vw, 7rem);
-  letter-spacing: clamp(-2px, -22vw, -35px);
+  letter-spacing: clamp(-4px, -22vw, -35px);
   vertical-align: middle;
-  line-height: 0.9;
+  line-height: 1.15;
+}
+.digital-horizons h2 {
+  display: inline-block;
+  background: linear-gradient(90deg, #FFFFAC, #29FFFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.digital-horizons h2 span {
+  display: inline-block;
+}
+.digital-horizons h2 span span {
+  display: inline-block;
 }
 .digital-horizons .bottom-text {
   font-size: clamp(1rem, 5vw, 6rem);

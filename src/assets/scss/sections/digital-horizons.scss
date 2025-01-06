@@ -5,19 +5,29 @@
 
     h2 {
         font-size: clamp(1rem, 9vw, 7rem);
-        letter-spacing: clamp(-2px, -22vw, -35px);
+        letter-spacing: clamp(-4px, -22vw, -35px);
         vertical-align: middle;
-        line-height: .9;
-
-        // span {
-        //     background: linear-gradient(#FFFFAD, #2BFFFF);
-        //     background: -webkit-linear-gradient(#FFFFAD, #2BFFFF);
-        //     background-clip: text;
-        //     -webkit-background-clip: text;
-        //     color: transparent;
-        //     -webkit-text-fill-color: transparent;
-        // }
+        line-height: 1.15;
     }
+
+    h2 {
+        display: inline-block; 
+        background: linear-gradient(90deg, #FFFFAC, #29FFFF); 
+        background-clip: text; 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent; 
+      }
+      
+      h2 span {
+        display: inline-block;
+      }
+      
+      h2 span span {
+        display: inline-block; 
+      }
+      
+      
 
     .bottom-text {
         font-size: clamp(1rem, 5vw, 6rem);
