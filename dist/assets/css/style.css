@@ -12062,7 +12062,7 @@ html.lenis {
   padding-bottom: 96px;
 }
 .digital-horizons h2 {
-  font-size: clamp(1rem, 10vw, 7rem);
+  font-size: clamp(1rem, 9vw, 7rem);
   letter-spacing: clamp(-2px, -22vw, -35px);
   vertical-align: middle;
   line-height: 0.9;
@@ -12096,15 +12096,11 @@ html.lenis {
 }
 
 #audience {
-  opacity: 0.9;
   background: linear-gradient(180deg, #141414 40.83%, #000 100%);
   color: #eee !important;
-  background-image: url("/assets/images/ohil-audience-bg.svg");
-  background-position: 50% 360%;
   background-repeat: no-repeat;
   overflow: hidden;
   align-items: flex-end;
-  background-size: 90%;
 }
 #audience .section-title {
   color: #E3006C !important;
@@ -12113,7 +12109,7 @@ html.lenis {
   border: var(--bs-border-width) var(--bs-border-style) #E3006C !important;
 }
 #audience .headline {
-  font-size: clamp(1rem, 10vw, 20rem);
+  font-size: clamp(1rem, 8vw, 20rem);
   letter-spacing: clamp(-2px, -22vw, -35px);
   vertical-align: middle;
   line-height: 0.9;
@@ -12132,8 +12128,14 @@ html.lenis {
   height: 100% !important;
   pointer-events: none;
 }
-#audience .container, #audience .row {
+#audience .container {
   min-height: 100vh;
+}
+#audience #audience-count {
+  display: inline-block;
+  text-align: right;
+  font-feature-settings: "tnum";
+  width: 6ch;
 }
 
 .engagement {
@@ -12330,6 +12332,12 @@ code {
   #accessibility .content-center {
     align-self: center !important;
   }
+}
+#accessibility #accessibility-count {
+  display: inline-block;
+  text-align: right;
+  font-feature-settings: "tnum";
+  width: 4ch;
 }
 
 body {

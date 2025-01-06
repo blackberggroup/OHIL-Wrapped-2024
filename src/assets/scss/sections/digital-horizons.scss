@@ -4,10 +4,19 @@
     padding-bottom: 96px;
 
     h2 {
-        font-size: clamp(1rem, 10vw, 7rem);
+        font-size: clamp(1rem, 9vw, 7rem);
         letter-spacing: clamp(-2px, -22vw, -35px);
         vertical-align: middle;
-        line-height: .9
+        line-height: .9;
+
+        // span {
+        //     background: linear-gradient(#FFFFAD, #2BFFFF);
+        //     background: -webkit-linear-gradient(#FFFFAD, #2BFFFF);
+        //     background-clip: text;
+        //     -webkit-background-clip: text;
+        //     color: transparent;
+        //     -webkit-text-fill-color: transparent;
+        // }
     }
 
     .bottom-text {
