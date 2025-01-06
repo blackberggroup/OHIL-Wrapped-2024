@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@1,14..32,100..900&display=swap");
+/* Colors */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11846,7 +11847,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* Colors */
 .text-bebas {
   font-family: "Bebas Neue", serif;
   font-weight: 400;
@@ -12055,6 +12055,26 @@ html.lenis {
   vertical-align: middle;
   line-height: 1;
 }
+.transforming-development .word-border {
+  position: relative;
+}
+.transforming-development .word-border span {
+  width: 0;
+  height: 3px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.transforming-development .word-border.blue span {
+  background: #0E5FFB;
+}
+.transforming-development .word-border.green span {
+  background: #81E300;
+}
+.transforming-development .word-border.orange span {
+  background: #FE800F;
+}
 
 .digital-horizons {
   background: linear-gradient(90deg, #0E5FFB 0%, #FF7A22 77.5%, #C91E30 100%);
@@ -12082,6 +12102,9 @@ html.lenis {
 
 #lines-of-code .overlay {
   background: rgba(20, 20, 20, 0.9);
+}
+#lines-of-code p {
+  font-size: 26px;
 }
 #lines-of-code img {
   max-height: 350px;
@@ -12147,7 +12170,7 @@ html.lenis {
 .engagement h3 {
   font-size: clamp(1rem, 3.4vw, 5rem);
   letter-spacing: clamp(-2px, -22vw, -35px);
-  line-height: 100%; /* 64px */
+  line-height: 100%;
 }
 .engagement .border {
   border: var(--bs-border-width) var(--bs-border-style) #FE800F !important;

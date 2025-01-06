@@ -1,5 +1,5 @@
 export default function initKeyboardNavigation(lenis = null) {
-    const sections = document.querySelectorAll(".container-fluid");
+    const sections = document.querySelectorAll(".keyboard-nav");
     let currentSectionIndex = 0;
   
     function scrollToSection(index) {

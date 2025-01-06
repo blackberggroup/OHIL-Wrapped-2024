@@ -32,6 +32,7 @@ export function digitalHorizonsAnimations() {
   ScrollTrigger.create({
     trigger: ".dh-stats",
     start: "top 80%", 
+    once: true,
     onEnter: () => {
       counters.forEach(({ elementId, start, end, duration, delay }) =>
         animateCountUp(elementId, start, end, duration, delay)
