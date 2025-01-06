@@ -10,6 +10,7 @@ import { fadeInParagraphs } from "./animations/paragraph-fade-in";
 import { toolsAnimation } from "./animations/10-tools";
 import { accessibilityAnimations } from "./animations/07-accessibility";
 import { animateUSMapCircles } from "./animations/05-audience";
+import { animateWordBordersOnScroll } from "./animations/02-transforming";
 
 initKeyboardNavigation(lenis);
 
@@ -25,4 +26,5 @@ window.addEventListener("load", () => {
   toolsAnimation();
   accessibilityAnimations();
   animateUSMapCircles();
+  animateWordBordersOnScroll();
 });

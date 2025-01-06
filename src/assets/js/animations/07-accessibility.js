@@ -24,12 +24,13 @@ export function accessibilityAnimations() {
   }
 
   const counters = [
-    { elementId: "accessibility-count", start: 0.0, end: 16.86, duration: 3, delay: 1 },
+    { elementId: "accessibility-count", start: 10.01, end: 16.86, duration: 3, delay: 1 },
   ];
 
   ScrollTrigger.create({
     trigger: "#accessibility",
     start: "top 80%", 
+    once: true,
     onEnter: () => {
       counters.forEach(({ elementId, start, end, duration, delay }) =>
         animateCountUp(elementId, start, end, duration, delay)

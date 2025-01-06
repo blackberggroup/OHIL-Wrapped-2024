@@ -9,10 +9,12 @@ export function toolsAnimation() {
   const middleRow = document.querySelector(".tool-row.middle");
   const bottomRow = document.querySelector(".tool-row.bottom");
 
+  gsap.set(middleRow, { x: -100 });
+
   if (topRow && middleRow && bottomRow) {
 
     gsap.to(topRow, {
-      xPercent: -10,
+      xPercent: -5,
       ease: "none",
       scrollTrigger: {
         trigger: "#tools-sliding-rows-section",
@@ -23,7 +25,7 @@ export function toolsAnimation() {
     });
 
     gsap.to(middleRow, {
-      xPercent: 10,
+      xPercent: 5,
       ease: "none",
       scrollTrigger: {
         trigger: "#tools-sliding-rows-section",
@@ -34,7 +36,7 @@ export function toolsAnimation() {
     });
 
     gsap.to(bottomRow, {
-      xPercent: -10,
+      xPercent: -5,
       ease: "none",
       scrollTrigger: { 
         trigger: "#tools-sliding-rows-section",

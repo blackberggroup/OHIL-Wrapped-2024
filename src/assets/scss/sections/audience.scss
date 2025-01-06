@@ -1,21 +1,18 @@
+@use '../abstracts/variables' as *;
+
 #audience {
-    // opacity: 0.9;
     background: linear-gradient(180deg, #141414 40.83%, #000 100%); 
     color: #eee !important;
-
-    // background-image: url('/assets/images/ohil-audience-bg.svg');
-    // background-position: 50% 360%; 
     background-repeat: no-repeat; 
     overflow: hidden;
     align-items: flex-end;
-    // background-size: 90%;
     
     .section-title {
-        color: #E3006C !important;
+        color: $pink !important;
     }
 
     .border {
-        border: var(--bs-border-width) var(--bs-border-style) #E3006C !important;
+        border: var(--bs-border-width) var(--bs-border-style) $pink !important;
     }
 
     .headline {
@@ -23,7 +20,7 @@
         letter-spacing: clamp(-2px, -22vw, -35px);
         vertical-align: middle;
         line-height: .9;
-        color: #E3006C !important;
+        color: $pink !important;
     }
     
     p {

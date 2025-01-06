@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .engagement {
     background: #050505;
     padding-top: 72px;
@@ -7,12 +9,11 @@
     h3 {
         font-size: clamp(1rem, 3.4vw, 5rem);
         letter-spacing: clamp(-2px, -22vw, -35px);
-        line-height: 100%; /* 64px */
-        // letter-spacing: -4px;
+        line-height: 100%; 
     }
 
     .border {
-        border: var(--bs-border-width) var(--bs-border-style) #FE800F !important;
+        border: var(--bs-border-width) var(--bs-border-style) $orange !important;
     }
 
     .dl-number {

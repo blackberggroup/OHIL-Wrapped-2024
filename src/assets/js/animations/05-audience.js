@@ -37,7 +37,7 @@ export function animateUSMapCircles() {
     elements.forEach((circle) => {
       gsap.to(circle, {
         scale: 1.3, 
-        fill: '#FE800F',
+        fill: '#E3006C',
         duration: 1.5, 
         repeat: -1, 
         yoyo: true,
