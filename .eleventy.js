@@ -8,6 +8,9 @@ module.exports = function (eleventyConfig) {
     
     // Watch the SCSS directory for changes
     eleventyConfig.addWatchTarget("src/assets/scss");
+    
+    // Passthrough copy for images
+    eleventyConfig.addPassthroughCopy("src/assets/images");
 
     // Watch the compiled CSS file for changes
     eleventyConfig.setBrowserSyncConfig({

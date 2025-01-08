@@ -1,20 +1,44 @@
-#design {
+.design {
     background-image: url('/assets/images/ohil-design-bg.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     overflow: hidden;
-
     color: #eee !important;
 
     .headline {
         font-size: clamp(1rem, 10vw, 5rem);
         letter-spacing: clamp(-2px, -22vw, -35px);
         vertical-align: middle;
-        line-height: .9
+        line-height: 1;
     }
 
-    .figma-animation {
-        margin-left: -1.3rem;
+    &__animation {
+        background-color: #141414;
+        border-radius: .5rem;
+        padding-top: 1rem;
+        z-index: 1;
+        @media (min-width: 1200px) {
+            position: absolute;
+            top: 50%;
+            left: -25%;
+            transform: translateY(-50%);
+        }
+        
     }
+
+    &__animation-container {
+        z-index: 10;
+        position: relative;
+    }
+
+    &__animation-ui {
+        border: 1px solid yellow;
+        position: absolute;
+        top: 4%;
+        left: 3%;
+        width: 94%;
+        height: 88%;
+    }
+
 }
