@@ -12235,15 +12235,63 @@ html.lenis {
 }
 .design__animation-container {
   z-index: 10;
-  position: relative;
 }
 .design__animation-ui {
-  border: 1px solid yellow;
   position: absolute;
   top: 4%;
   left: 3%;
   width: 94%;
   height: 88%;
+}
+.design .design__cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%); /* Center the cursor at its x/y position */
+  z-index: 10;
+}
+.design .design__cursor svg {
+  transform: scaleX(-1);
+}
+.design .design__cursor .cursor-icon-1 {
+  fill: #139dff;
+}
+.design .design__cursor .cursor-icon-2 {
+  fill: #bb47c1;
+}
+.design .design__cursor .cursor-icon-3 {
+  fill: #3ad118;
+}
+.design .design__cursor .cursor-icon-4 {
+  fill: red;
+}
+.design .cursor-label {
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  font-size: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.design .cursor-label-1 {
+  background-color: #139dff;
+}
+.design .cursor-label-2 {
+  background-color: #bb47c1;
+}
+.design .cursor-label-3 {
+  background-color: #3ad118;
+  color: black;
+}
+.design .cursor-label-4 {
+  background-color: red;
 }
 
 #code {
