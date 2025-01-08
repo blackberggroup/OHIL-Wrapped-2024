@@ -12238,10 +12238,11 @@ html.lenis {
 }
 .design__animation-ui {
   position: absolute;
-  top: 4%;
+  border: 1px solid red;
+  top: 8%;
   left: 3%;
   width: 94%;
-  height: 88%;
+  height: 84%;
 }
 .design .design__cursor {
   position: absolute;
