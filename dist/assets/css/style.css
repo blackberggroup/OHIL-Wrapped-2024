@@ -11977,7 +11977,7 @@ html.lenis {
 }
 
 #hero {
-  background-image: url("/assets/images/ohil-hero-bg.jpg");
+  background-image: url("/assets/images/ohil-hero-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12206,7 +12206,7 @@ html.lenis {
 }
 
 .design {
-  background-image: url("/assets/images/ohil-design-bg.jpg");
+  background-image: url("/assets/images/ohil-design-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12373,7 +12373,7 @@ code {
 }
 
 #tools {
-  background-image: url("/assets/images/tools-bg.jpg");
+  background-image: url("/assets/images/tools-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
