@@ -14,7 +14,7 @@ import { accessibilityAnimations } from "./animations/07-accessibility";
 import { animateUSMapCircles } from "./animations/05-audience";
 import { animateWordBordersOnScroll } from "./animations/02-transforming";
 
-//initKeyboardNavigation(lenis);
+initKeyboardNavigation(lenis);
 gsap.registerPlugin(MotionPathPlugin);
 
 initBulgeEffect('hero', '/assets/images/ohil-hero-bg.jpg');
