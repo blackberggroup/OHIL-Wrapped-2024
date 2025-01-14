@@ -16,15 +16,6 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-ScrollTrigger.scrollerProxy(document.body, {
-  scrollTop(value) {
-    return arguments.length ? lenis.scrollTo(value) : lenis.scroll;
-  },
-  getBoundingClientRect() {
-    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-  },
-});
-
 lenis.on("scroll", ScrollTrigger.update);
 
 export { lenis, gsap };
