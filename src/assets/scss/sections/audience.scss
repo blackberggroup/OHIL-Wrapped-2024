@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+
+#audience {
+    background: linear-gradient(180deg, #141414 40.83%, #000 100%); 
+    color: #eee !important;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    align-items: flex-end;
+    
+    .section-title {
+        color: $pink !important;
+    }
+
+    .border {
+        border: var(--bs-border-width) var(--bs-border-style) $pink !important;
+    }
+
+    .headline {
+        font-size: clamp(1rem, 8vw, 20rem);
+        letter-spacing: clamp(-2px, -22vw, -35px);
+        vertical-align: middle;
+        line-height: .9;
+        color: $pink !important;
+    }
+    
+    p {
+        font-size: clamp(1rem, 5vw, 1.6rem);
+        line-height: 110%; /* 28.6px */
+        letter-spacing: -1px;
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      pointer-events: none;
+    }
+  
+      .container {
+          min-height: 100vh;
+      }
+  
+      #audience-count {
+        display: inline-block;
+        text-align: right;
+        font-feature-settings: "tnum";
+        width: 6ch;
+      }
+  }

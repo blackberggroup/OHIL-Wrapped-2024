@@ -8,8 +8,8 @@
     "build": "npm-run-all build:scss build:js build:11ty",
     "dev:11ty": "eleventy --serve",
     "watch:js": "vite build --watch",
-    "watch:scss": "sass --watch src/assets/scss:src/assets/css --load-path=node_modules --quiet-deps",
-    "build:scss": "sass src/assets/scss:src/assets/css",
+    "watch:scss": "sass --watch src/assets/scss/style.scss:dist/assets/css/style.css --load-path=node_modules --quiet-deps",
+    "build:scss": "sass src/assets/scss/style.scss:dist/assets/css/style.css --load-path=node_modules --quiet-deps",
     "build:js": "vite build",
     "build:11ty": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,10 @@
     "vite": "^6.0.5"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "bootstrap": "^5.3.3",
-    "gsap": "^3.12.5"
+    "gsap": "^3.12.5",
+    "ogl": "^1.0.9",
+    "prismjs": "^1.29.0"
   }
 }

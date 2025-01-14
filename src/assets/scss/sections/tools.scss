@@ -1,0 +1,46 @@
+#tools {
+
+    background-image: url('/assets/images/tools-bg.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden;
+
+    .tools-list {
+        font-family: 'Bebas Neue', sans-serif;
+        -webkit-text-stroke: 1px #111;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-align: center;
+        overflow: visible;
+        width: 100vw; 
+        position: relative;
+        margin: 0;
+        padding: 0; 
+        font-size: 4rem;
+        line-height: 4rem;
+        font-weight: 400;
+        color: transparent;
+    }
+    
+    .tools-list p{
+        padding-bottom:0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .tools-descp{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        color:#111;
+        text-align: center;
+        -webkit-text-stroke: 0;
+        text-transform: none;
+        margin: 0 auto;
+        margin-top: 50px;
+        white-space: wrap;
+
+    }
+    
+}
+

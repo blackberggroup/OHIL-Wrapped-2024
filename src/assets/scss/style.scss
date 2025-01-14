@@ -1,1 +1,23 @@
+@use 'abstracts/variables' as *;
 @use "bootstrap/scss/bootstrap";
+@use 'base/typography' as *;
+@use 'base/utilities';
+@use 'base/animations';
+@use 'components/big-numbers';
+@use 'sections/hero';
+@use 'sections/transforming-development';
+@use 'sections/digital-horizons';
+@use 'sections/lines-of-code';
+@use 'sections/audience';
+@use 'sections/engagement';
+@use 'sections/design';
+@use 'sections/code';
+@use 'sections/looking-ahead';
+@use 'sections/tools';
+@use 'sections/recap';
+@use 'sections/accessibility';
+
+body {
+    background: #141414;
+    font-family:  "Inter", sans-serif;
+}

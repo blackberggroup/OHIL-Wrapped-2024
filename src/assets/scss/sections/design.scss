@@ -1,0 +1,106 @@
+.design {
+    background-image: url('/assets/images/ohil-design-bg.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    color: #eee !important;
+
+    .headline {
+        font-size: clamp(1rem, 10vw, 5rem);
+        letter-spacing: clamp(-2px, -22vw, -35px);
+        vertical-align: middle;
+        line-height: 1;
+    }
+
+    &__animation {
+        background-color: #141414;
+        border-radius: .5rem;
+        padding-top: 1rem;
+        z-index: 1;
+        @media (min-width: 1200px) {
+            position: absolute;
+            top: 50%;
+            left: -25%;
+            transform: translateY(-50%);
+        }
+        
+    }
+
+    &__animation-container {
+        z-index: 10;
+    }
+
+    &__animation-ui {
+        position: absolute;
+        top: 8%;
+        left: 3%;
+        width: 94%;
+        height: 84%;
+    }
+
+    .design__cursor {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%, -50%); /* Center the cursor at its x/y position */
+        z-index: 10;
+
+        svg {
+            transform: scaleX(-1);
+        }
+
+        .cursor-icon-1 {
+            fill: #139dff;
+        }
+
+        .cursor-icon-2 {
+            fill: #bb47c1;
+        }
+        
+        .cursor-icon-3 {
+            fill: #3ad118;
+        }
+        
+        .cursor-icon-4 {
+            fill: red;
+        }        
+
+      }
+      
+      .cursor-label {
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        // transform: translateX(-50%);
+        font-size: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2px 5px;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+
+        &-1 {
+            background-color: #139dff;
+        }
+
+        &-2 {
+            background-color: #bb47c1;
+        }
+
+        &-3 {
+            background-color: #3ad118;
+            color: black;
+        }
+
+        &-4 {
+            background-color: red;
+        }
+
+      }      
+
+}

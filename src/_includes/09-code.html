@@ -1,3 +1,100 @@
-<section>
-    <h1>Code</h1>
+<section id="code" class="container-fluid d-flex align-items-center justify-content-center text-white position-relative py-5 keyboard-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center text-center">
+                <span class="small text-uppercase rounded-4 border py-1 px-3 align-self-center mb-5">Code</span>
+                <h2 class="section-title text-inter-700">From Lines of Code to Lasting Impact</h2>
+            </div>
+            <div class="col-12 col-md-8 offset-md-2 d-flex flex-column code-ui" id="code-ui">
+                <div class="card code-ui__card">
+                    <div class="code-ui__card-toolbar">
+                        <span class="circle first"></span>
+                        <span class="circle second"></span>
+                        <span class="circle third"></span>
+                    </div>
+                    <div class="card-body code-ui__card-body"><code>// Animate each big-numbers element
+document.querySelectorAll(".big-numbers").forEach((element) {
+    const numberElement = element.querySelector(".big-numbers__number");
+
+    if (!numberElement) return; // Safeguard in case the structure is missing
+    const finalValue = parseInt(numberElement.textContent.replace(/,/g, ""), 10);
+
+    // Counting animation
+    gsap.fromTo(
+    numberElement,
+    { textContent: 0 }, // Start from 0
+    {
+        textContent: finalValue,
+        scrollTrigger: {
+        trigger: element,
+        start: "top center", // Start when the element is in the center of the viewport
+        end: "bottom center", // End when the element leaves the viewport
+        scrub: true, // Enable reverse animation on scroll up
+        },
+        ease: "power1.inOut", // Smooth counting in both directions
+        snap: { textContent: 1 }, // Snap to whole numbers
+        onUpdate: function () {
+        numberElement.textContent = Math.floor(this.targets()[0].textContent).toLocaleString();
+        },
+    }
+    );
+
+    // Bounce and fade animations
+    gsap.fromTo(
+    element,
+    { scale: 0.5, opacity: 0 }, // Start small and invisible
+    {
+        scale: 1,
+        opacity: 1,
+        scrollTrigger: {
+        trigger: element,
+        start: "top center",
+        end: "bottom center", // Element fades out when it leaves the viewport
+        scrub: true, // Enable reverse animation on scroll up
+        },
+        ease: "power1.inOut", // Smooth scaling in both directions
+    }
+    );
+});
+                            <span class="code-ui__cursor"></span>
+                        </code>
+                    </div>
+                </div>
+                <!-- <img src="/assets/images/code-ui.webp" class="code-ui__image" alt="html code being displayed in a text editor" /> -->
+                <div class="code-ui__vertical-line"></div>
+            </div>
+        </div>
+        <div class="row big-numbers__row">
+            <div class="col-3 offset-3">
+                <div class="position-relative big-numbers" id="code-projects">
+                    <span class="big-numbers__number" id="">14</span>
+                    <span class="big-numbers__label">Projects</span>
+                </div>
+            </div>            
+        </div>
+        <div class="row big-numbers__row">
+            <div class="col-3 offset-6 my-5">
+                <div class="position-relative big-numbers" id="code-repositories">
+                    <span class="big-numbers__number" id="">16</span>
+                    <span class="big-numbers__label">Repositories</span>
+                </div>                
+            </div>
+        </div>
+        <div class="row big-numbers__row">
+            <div class="col-6 my-5">
+                <div class="position-relative big-numbers" id="code-commits">
+                    <span class="big-numbers__number" id="">1,238</span>
+                    <span class="big-numbers__label">Commits</span>
+                </div>
+            </div>            
+        </div>   
+        <div class="row big-numbers__row">
+            <div class="col-4 offset-6 my-5">
+                <div class="position-relative big-numbers" id="code-pull-requests">
+                    <span class="big-numbers__number" id="">214</span>
+                    <span class="big-numbers__label">Pull Requests</span>
+                </div>                
+            </div>
+        </div>             
+    </div>
 </section>

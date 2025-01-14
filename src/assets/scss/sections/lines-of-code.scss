@@ -1,0 +1,21 @@
+#lines-of-code {
+    .overlay {
+        background: rgba(20, 20, 20, 0.9);
+    }
+
+    p {
+        font-size: 26px;
+    }
+
+    img {
+        max-height: 350px;
+
+        @media(max-width: 991px){
+            max-height: 200px;
+        }
+    }
+
+    .sliding-row.middle {
+        transform: translateX(-25vw);
+    }
+}

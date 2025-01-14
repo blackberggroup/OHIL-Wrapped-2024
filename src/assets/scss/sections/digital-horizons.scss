@@ -1,0 +1,33 @@
+.digital-horizons {
+    background: linear-gradient(90deg, #0E5FFB 0%, #FF7A22 77.5%, #C91E30 100%);
+    padding-top: 128px;
+    padding-bottom: 96px;
+
+    .dh-headline {
+        font-size: clamp(1rem, 9vw, 7rem);
+        letter-spacing: clamp(-4px, -22vw, -35px);
+        color: transparent; 
+        background-image: linear-gradient(to right, #FFFFAB, #29FFFF);
+        background-clip: text; 
+        -webkit-background-clip: text; 
+    }
+      
+    .dh-headline span {
+        display: inline-block; 
+    }
+    
+
+    .bottom-text {
+        font-size: clamp(1rem, 5vw, 6rem);
+        letter-spacing: clamp(-2px, -22vw, -25px);
+        vertical-align: middle;
+        line-height: 1
+    }
+
+    .dh-number {
+        font-size: clamp(1rem, 20vw, 20rem);
+        letter-spacing: clamp(-2px, -22vw, -35px);
+        vertical-align: middle;
+        line-height: 1;
+    }
+}
